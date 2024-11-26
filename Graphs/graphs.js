@@ -1,10 +1,15 @@
+// E and F having no neigbhours to finish the loop
 const smallGraph = {
-  A: ["B"],
-  B: ["A", "C"],
-  C: ["B"],
+  A: ["B", "C"],
+  B: ["D"],
+  C: ["E"],
+  D: ["F"],
+  E: [],
+  F: []
 };
 
-console.log(smallGraph);
+
+
 
 const mediumGraph = {
   A: ["B", "C"],
@@ -13,8 +18,6 @@ const mediumGraph = {
   D: ["B", "E"],
   E: ["C", "D"],
 };
-
-console.log(mediumGraph);
 
 const largeGraph = {
   A: ["B", "C", "D"],
@@ -27,4 +30,9 @@ const largeGraph = {
   H: ["D", "G"],
 };
 
-console.log(largeGraph);
+
+
+
+export const sGraph = smallGraph;
+export const mGraph = mediumGraph;
+export const lGraph = largeGraph;
