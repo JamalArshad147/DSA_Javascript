@@ -23,5 +23,5 @@ let bags = [
     }
   }
   
-  console.log(ans.reduce((sum, item) => sum + item.price, 0));
+  console.log(ans.reduce((sum, item) => sum + item.price, 0)); // result: 109
   
